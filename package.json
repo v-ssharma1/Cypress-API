@@ -1,0 +1,54 @@
+{
+  "name": "cypress-api",
+  "version": "1.0.0",
+  "description": "API automation using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-ssharma1/Cypress-API.git"
+  },
+  "author": "diy-service-virtualization <diy-service-virtualization>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-ssharma1/Cypress-API/issues"
+  },
+  "homepage": "https://github.com/v-ssharma1/Cypress-API#readme",
+  "dependencies": {
+    "@types/jsonpath": "^0.2.4",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "browserify": "^17.0.0",
+    "chai": "^5.1.1",
+    "child_process": "^1.0.2",
+    "crypto.js": "^3.2.1",
+    "cypress": "^13.10.0",
+    "husky": "^9.0.11",
+    "json-diff": "^1.0.6",
+    "jsonpath": "^1.1.1",
+    "jsonpath-plus": "^9.0.0",
+    "lint-staged": "^15.2.5",
+    "moment": "^2.30.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "node-xlsx": "^0.24.0",
+    "os": "^0.1.2",
+    "typescript": "^5.4.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.21.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": true,
+    "stepDefinition": [],
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter.exe",
+      "output": "cypress/cucumber-json/report.json"
+    }
+  }
+}
